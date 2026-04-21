@@ -30,11 +30,6 @@ function ContactInfo() {
         </div>
 
         <div className="rounded-2xl bg-white p-5 shadow-sm">
-          <p className="text-sm font-semibold text-pink-600">Correo</p>
-          <p className="mt-1 text-lg text-gray-700">contacto@fervet.cl</p>
-        </div>
-
-        <div className="rounded-2xl bg-white p-5 shadow-sm">
           <p className="text-sm font-semibold text-pink-600">Dirección</p>
           <p className="mt-1 text-lg text-gray-700">
            Avenida Padre Hurtado 11379, El Bosque, Santiago, Chile

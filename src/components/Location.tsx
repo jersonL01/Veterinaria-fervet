@@ -47,7 +47,11 @@ function Location() {
               </p>
               <p>
                 <span className="font-semibold text-purple-900">Horario:</span>{" "}
-                Lunes a Sábado, 09:00 a 19:00 hrs
+                Lunes a Sábado, 09:00 a 20:00 hrs
+              </p>
+               <p>
+                <span className="font-semibold text-purple-900">Horario:</span>{" "}
+                Domingo y Festivos, 10:00 a 20:00 hrs
               </p>
             </div>
 

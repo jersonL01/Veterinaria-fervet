@@ -1,4 +1,4 @@
-import Navbar from "../components/Navbar";
+
 import Footer from "../components/Footer";
 import ContactHero from "../components/contact/ContactHero";
 import ContactInfo from "../components/contact/ContactInfo";
@@ -8,7 +8,6 @@ import WhatsAppButton from "../components/BtnWtsp";
 function Contact() {
   return (
     <div className="min-h-screen bg-white text-gray-800">
-      <Navbar />
 
       <ContactHero />
 
@@ -26,7 +25,7 @@ function Contact() {
         phone="56999250899"
         message="Hola, quiero agendar una consulta para mi mascota."
       />
-      <Footer />
+   
     </div>
   );
 }

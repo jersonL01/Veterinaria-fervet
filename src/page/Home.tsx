@@ -1,5 +1,5 @@
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
+
+
 import WhatsAppButton from "../components/BtnWtsp";
 import Carrusel from "../components/Carrusel";
 import Location from "../components/Location";
@@ -9,7 +9,6 @@ import Testimonio from "../components/Testimonio";
 export function Home() {
   return (
     <div className="min-h-screen bg-pink-50 text-gray-800 flex flex-col">
-      <Navbar />
 
       <main className="flex-1">
        <section className="relative overflow-hidden bg-gradient-to-br from-pink-100 via-purple-100 to-white">
@@ -66,7 +65,7 @@ export function Home() {
 
       </main>
 
-      <Footer />
+
       <WhatsAppButton
         phone="56999250899"
         message="Hola, quiero agendar una consulta para mi mascota."
