@@ -1,4 +1,6 @@
+
 import { useEffect, useState } from "react";
+import { NavLink } from "react-router-dom";
 
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -16,6 +18,20 @@ function Navbar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  const navLinkClass = ({ isActive }: { isActive: boolean }) =>
+    `relative font-medium transition duration-300 after:absolute after:bottom-[-6px] after:left-0 after:h-[2px] after:transition-all after:duration-300 ${
+      isActive
+        ? "text-pink-300 after:w-full after:bg-pink-300"
+        : "text-white/80 hover:text-pink-300 after:w-0 after:bg-pink-300 hover:after:w-full"
+    }`;
+
+  const mobileNavLinkClass = ({ isActive }: { isActive: boolean }) =>
+    `py-3 font-medium transition ${
+      isActive
+        ? "translate-x-1 text-pink-300"
+        : "text-white/90 hover:translate-x-1 hover:text-pink-300"
+    }`;
+
   return (
     <header
       className={`sticky top-0 z-50 border-b border-white/10 backdrop-blur-md transition-all duration-500 ${
@@ -27,8 +43,8 @@ function Navbar() {
       }`}
     >
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
-        <a
-          href="#"
+        <NavLink
+          to="/"
           className="flex items-center gap-3 transition-all duration-300 hover:scale-105"
         >
           <img
@@ -37,55 +53,27 @@ function Navbar() {
             className="h-10 w-10 rounded-full object-cover shadow-md transition-transform duration-300 hover:rotate-6"
           />
           <span className="text-xl font-bold text-white transition duration-300 hover:text-pink-300">
-            Clinica Veterinaria Fervet
+            Clínica Veterinaria Fervet
           </span>
-        </a>
+        </NavLink>
 
         <nav className="hidden items-center gap-8 md:flex">
-          <a
-            href="/"
-            className="relative font-medium text-white/80 transition duration-300 hover:text-pink-300 after:absolute after:bottom-[-6px] after:left-0 after:h-[2px] after:w-0 after:bg-pink-300 after:transition-all after:duration-300 hover:after:w-full"
-          >
+          <NavLink to="/" end className={navLinkClass}>
             Inicio
-          </a>
-          <a
-            href="/Service"
-            className="relative font-medium text-white/80 transition duration-300 hover:text-pink-300 after:absolute after:bottom-[-6px] after:left-0 after:h-[2px] after:w-0 after:bg-pink-300 after:transition-all after:duration-300 hover:after:w-full"
-          >
+          </NavLink>
+
+          <NavLink to="/service" className={navLinkClass}>
             Servicios
-          </a>
-          <a
-            href="/Adopcion"
-            className="relative font-medium text-white/80 transition duration-300 hover:text-pink-300 after:absolute after:bottom-[-6px] after:left-0 after:h-[2px] after:w-0 after:bg-pink-300 after:transition-all after:duration-300 hover:after:w-full"
-          >
-            Adopción
-          </a>
-          <a
-            href="/about"
-            className="relative font-medium text-white/80 transition duration-300 hover:text-pink-300 after:absolute after:bottom-[-6px] after:left-0 after:h-[2px] after:w-0 after:bg-pink-300 after:transition-all after:duration-300 hover:after:w-full"
-          >
+          </NavLink>
+
+          <NavLink to="/about" className={navLinkClass}>
             Nosotros
-          </a>
-          <a
-            href="/contact"
-            className="relative font-medium text-white/80 transition duration-300 hover:text-pink-300 after:absolute after:bottom-[-6px] after:left-0 after:h-[2px] after:w-0 after:bg-pink-300 after:transition-all after:duration-300 hover:after:w-full"
-          >
+          </NavLink>
+
+          <NavLink to="/contact" className={navLinkClass}>
             Contacto
-          </a>
+          </NavLink>
         </nav>
-
-     
-        <div className="hidden md:block">
-          
-          <a
-            href="#contacto"
-            className="rounded-xl bg-pink-500 px-5 py-2.5 font-semibold text-white shadow-lg transition-all duration-300 hover:scale-105 hover:bg-pink-600 hover:shadow-pink-500/30"
-          >
-            Reservar
-          </a>
-
-        </div> 
-       
 
         <button
           onClick={() => setMenuOpen(!menuOpen)}
@@ -116,36 +104,39 @@ function Navbar() {
         }`}
       >
         <nav className="flex flex-col px-6 py-4">
-          <a
-            href="/"
+          <NavLink
+            to="/"
+            end
             onClick={() => setMenuOpen(false)}
-            className="py-3 font-medium text-white/90 transition hover:translate-x-1 hover:text-pink-300"
+            className={mobileNavLinkClass}
           >
             Inicio
-          </a>
-          <a
-            href="/Service"
+          </NavLink>
+
+          <NavLink
+            to="/service"
             onClick={() => setMenuOpen(false)}
-            className="py-3 font-medium text-white/90 transition hover:translate-x-1 hover:text-pink-300"
+            className={mobileNavLinkClass}
           >
             Servicios
-          </a>
-          <a
-            href="/About"
+          </NavLink>
+
+          <NavLink
+            to="/about"
             onClick={() => setMenuOpen(false)}
-            className="py-3 font-medium text-white/90 transition hover:translate-x-1 hover:text-pink-300"
+            className={mobileNavLinkClass}
           >
             Nosotros
-          </a>
-          <a
-            href="/Contact"
+          </NavLink>
+
+          <NavLink
+            to="/contact"
             onClick={() => setMenuOpen(false)}
-            className="py-3 font-medium text-white/90 transition hover:translate-x-1 hover:text-pink-300"
+            className={mobileNavLinkClass}
           >
             Contacto
-          </a>
+          </NavLink>
 
-          
         </nav>
       </div>
 

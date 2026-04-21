@@ -24,7 +24,7 @@ function ServiceCTAs() {
 
           <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
             <a
-              href="https://wa.me/56912345678"
+              href="https://wa.me/56999250899"
               target="_blank"
               rel="noopener noreferrer"
               className="rounded-xl bg-pink-500 px-6 py-3 font-semibold text-white shadow-lg transition hover:bg-pink-600"
@@ -32,12 +32,15 @@ function ServiceCTAs() {
               Escribir por WhatsApp
             </a>
 
-            <a
-              href="#ubicacion"
-              className="rounded-xl border border-white/20 bg-white/10 px-6 py-3 font-semibold text-white transition hover:bg-white/20"
-            >
-              Ver ubicación
-            </a>
+           
+           <a
+            href="https://maps.app.goo.gl/bu5HZwtMmcFEH2uTA"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="rounded-xl border border-white/20 bg-white/10 px-6 py-3 font-semibold text-white transition hover:bg-white/20"
+          >
+            Ver ubicación
+          </a>
           </div>
         </motion.div>
       </div>

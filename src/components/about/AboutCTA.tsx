@@ -20,14 +20,14 @@ function AboutCTA() {
 
           <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
             <a
-              href="/servicios"
+              href="/service"
               className="rounded-xl bg-pink-500 px-6 py-3 font-semibold text-white shadow-lg transition hover:scale-[1.02] hover:bg-pink-600"
             >
               Ver servicios
             </a>
 
             <a
-              href="/#contacto"
+              href="/contact"
               className="rounded-xl border border-white/20 bg-white/10 px-6 py-3 font-semibold text-white transition hover:bg-white/20"
             >
               Contáctanos

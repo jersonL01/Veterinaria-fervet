@@ -4,12 +4,11 @@ function Footer() {
       <div className="mx-auto grid max-w-7xl gap-10 px-6 py-12 md:grid-cols-4">
         <div>
           <div className="flex items-center gap-3">
-            <img src="/icon-fervet.png" alt="Fervet" className="h-10 w-10" />
-            <span className="text-xl font-bold">Fervet</span>
+            <img src="/icon-fervet.png" alt="Fervet" className="h-14 w-17" />
+            <span className="text-xl font-bold">Clinica Veterinaria Fervet</span>
           </div>
           <p className="mt-4 text-sm leading-6 text-white/80">
-            Clínica veterinaria comprometida con el bienestar, salud y cuidado
-            de tus mascotas.
+            Atención con Amor y Calidad
           </p>
         </div>
 
@@ -43,6 +42,7 @@ function Footer() {
           <h3 className="text-lg font-semibold">Contacto</h3>
           <ul className="mt-4 space-y-2 text-white/80">
             <li>Teléfono:+56 2 25595625</li>
+            <li>Celular:+56 9 99250899 </li>
             <li>Santiago, Chile</li>
           </ul>
         </div>

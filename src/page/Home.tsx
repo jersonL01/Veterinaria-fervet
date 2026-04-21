@@ -23,7 +23,7 @@ export function Home() {
               </span>
 
               <h1 className="mt-6 text-4xl font-extrabold leading-tight text-purple-900 md:text-6xl">
-                Cuidamos a tus mascotas con amor y profesionalismo
+                Cuidamos a tus mascotas con amor y calidad
               </h1>
 
               <p className="mt-6 max-w-xl text-lg leading-8 text-white">
@@ -33,14 +33,14 @@ export function Home() {
 
               <div className="mt-8 flex flex-wrap gap-4">
                 <a
-                  href="#servicios"
+                  href="/service"
                   className="rounded-xl bg-pink-500 px-6 py-3 font-semibold text-white shadow-md transition hover:bg-pink-600"
                 >
                   Ver servicios
                 </a>
 
                 <a
-                  href="#contacto"
+                  href="/contact"
                   className="rounded-xl border border-pink-300 bg-white px-6 py-3 font-semibold text-pink-600 transition hover:bg-pink-50"
                 >
                   Contáctanos

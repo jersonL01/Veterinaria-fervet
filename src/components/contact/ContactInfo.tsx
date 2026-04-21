@@ -26,6 +26,7 @@ function ContactInfo() {
         <div className="rounded-2xl bg-white p-5 shadow-sm">
           <p className="text-sm font-semibold text-pink-600">Teléfono</p>
           <p className="mt-1 text-lg text-gray-700">+56 2 25595625</p>
+          
         </div>
 
         <div className="rounded-2xl bg-white p-5 shadow-sm">

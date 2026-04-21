@@ -15,7 +15,7 @@ function About() {
       <AboutStory />
       <AboutMission />
       <AboutValues />
-      <AboutCTA />
+      <AboutCTA/>
       <WhatsAppButton
         phone="56999250899"
         message="Hola, quiero agendar una consulta para mi mascota."
