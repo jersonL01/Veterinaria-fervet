@@ -2,6 +2,7 @@ import WhatsAppButton from "../components/BtnWtsp";
 import Carrusel from "../components/Carrusel";
 import Location from "../components/Location";
 import Elerginos from "../components/Elerginos";
+import MetodoPago from "../components/MetodoPago";
 
 
 export function Home() {
@@ -57,7 +58,8 @@ export function Home() {
       </section>
       
       
-      <Elerginos />
+      <Elerginos/>
+      <MetodoPago/>
       <Location/>
 
       </main>
