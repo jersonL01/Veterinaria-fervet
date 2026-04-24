@@ -1,10 +1,8 @@
-
-
 import WhatsAppButton from "../components/BtnWtsp";
 import Carrusel from "../components/Carrusel";
 import Location from "../components/Location";
 import Elerginos from "../components/Elerginos";
-import Testimonio from "../components/Testimonio";
+
 
 export function Home() {
   return (
@@ -60,7 +58,6 @@ export function Home() {
       
       
       <Elerginos />
-      <Testimonio />
       <Location/>
 
       </main>

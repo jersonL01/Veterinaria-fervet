@@ -1,5 +1,4 @@
 
-import Footer from "../components/Footer";
 import ContactHero from "../components/contact/ContactHero";
 import ContactInfo from "../components/contact/ContactInfo";
 

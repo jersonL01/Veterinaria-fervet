@@ -61,6 +61,18 @@ function Footer() {
               <span>Instagram</span>
             </a>
           </li>
+           <li>
+            <a
+              href="https://www.facebook.com/share/1CtgVVNipM/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-3 transition hover:text-pink-300"
+            >
+              <img src="/logo-face.webp" alt="Facebook" className="h-7 w-7 object-contain" />
+              <span>Facebook</span>
+            </a>
+          </li>
+
 
           <li>
             <a

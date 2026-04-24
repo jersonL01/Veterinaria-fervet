@@ -14,7 +14,7 @@ const values = [
   {
     title: "Profesionalismo",
     description:
-      "Buscamos brindar una atención clara, responsable y enfocada en soluciones.",
+      "Atención de calidad y empática hacia nuestros clientes.",
   },
   {
     title: "Bienestar animal",

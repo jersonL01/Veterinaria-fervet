@@ -1,46 +1,38 @@
 import { motion } from "framer-motion";
 
-function ServiceCTAs() {
+function ServiceCTA() {
   return (
-    <section
-      id="contacto-servicios"
-      className="bg-gradient-to-r from-purple-950 to-fuchsia-800 py-20 text-white"
-    >
-      <div className="mx-auto max-w-5xl px-6 text-center">
+    <section className="pb-20 pt-8">
+      <div className="mx-auto max-w-7xl px-6">
         <motion.div
-          initial={{ opacity: 0, y: 35 }}
+          initial={{ opacity: 0, y: 24 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, amount: 0.25 }}
-          transition={{ duration: 0.6 }}
+          viewport={{ once: true, amount: 0.2 }}
+          transition={{ duration: 0.5 }}
+          className="rounded-[32px] border border-purple-100 bg-[#f5edf9] px-8 py-10 shadow-sm"
         >
-          <h2 className="text-3xl font-bold md:text-4xl">
-            Agenda una atención para tu mascota
-          </h2>
+          <div className="flex flex-col items-center justify-between gap-6 lg:flex-row">
+            <div className="flex items-center gap-4">
+              <div className="flex h-16 w-16 items-center justify-center rounded-full bg-purple-200 text-3xl">
+                📅
+              </div>
 
-          <p className="mx-auto mt-4 max-w-2xl text-lg text-white/80">
-            Estamos disponibles para orientarte y ayudarte a encontrar la mejor
-            atención según lo que tu mascota necesite.
-          </p>
+              <div>
+                <h3 className="text-3xl font-bold text-purple-900">
+                  ¿Necesitas agendar una consulta?
+                </h3>
+                <p className="mt-2 text-lg text-gray-600">
+                  Estamos aquí para ayudarte. Agenda fácil por WhatsApp.
+                </p>
+              </div>
+            </div>
 
-          <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
             <a
               href="https://wa.me/56999250899"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="rounded-xl bg-pink-500 px-6 py-3 font-semibold text-white shadow-lg transition hover:bg-pink-600"
+              className="rounded-full bg-pink-500 px-8 py-4 text-lg font-semibold text-white transition hover:scale-[1.02] hover:bg-pink-600"
             >
-              Escribir por WhatsApp
+              Agendar por WhatsApp
             </a>
-
-           
-           <a
-            href="https://maps.app.goo.gl/bu5HZwtMmcFEH2uTA"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="rounded-xl border border-white/20 bg-white/10 px-6 py-3 font-semibold text-white transition hover:bg-white/20"
-          >
-            Ver ubicación
-          </a>
           </div>
         </motion.div>
       </div>
@@ -48,4 +40,4 @@ function ServiceCTAs() {
   );
 }
 
-export default ServiceCTAs;
+export default ServiceCTA;

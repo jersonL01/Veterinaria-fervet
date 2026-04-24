@@ -28,7 +28,7 @@ function Elerginos() {
     {
       title: "Profesionales comprometidos",
       description:
-        "Trabajamos con dedicación y responsabilidad para brindar una atención de calidad.",
+        "Atención de calidad y empática hacia nuestros pacientes.",
     },
     {
       title: "Prevención y seguimiento",
@@ -38,7 +38,7 @@ function Elerginos() {
     {
       title: "Ubicación accesible",
       description:
-        "Estamos en un lugar de fácil acceso para que puedas visitarnos con comodidad.",
+        "Estamos a pasos del metro Observatorio Linea 2.",
     },
   ];
 

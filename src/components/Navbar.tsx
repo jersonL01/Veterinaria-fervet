@@ -50,7 +50,7 @@ function Navbar() {
           <img
             src="/icon-fervet.png"
             alt="Fervet"
-            className="h-10 w-10 rounded-full object-cover shadow-md transition-transform duration-300 hover:rotate-6"
+            className="h-10 w-10  object-cover transition-transform duration-300 hover:rotate-6"
           />
           <span className="text-xl font-bold text-white transition duration-300 hover:text-pink-300">
             Clínica Veterinaria Fervet
@@ -60,6 +60,9 @@ function Navbar() {
         <nav className="hidden items-center gap-8 md:flex">
           <NavLink to="/" end className={navLinkClass}>
             Inicio
+          </NavLink>
+           <NavLink to="/clientes" className={navLinkClass}>
+            Clientes
           </NavLink>
 
           <NavLink to="/service" className={navLinkClass}>
@@ -111,6 +114,13 @@ function Navbar() {
             className={mobileNavLinkClass}
           >
             Inicio
+          </NavLink>
+           <NavLink
+            to="/clientes"
+            onClick={() => setMenuOpen(false)}
+            className={mobileNavLinkClass}
+          >
+            Clientes
           </NavLink>
 
           <NavLink
