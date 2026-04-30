@@ -98,7 +98,7 @@ function Footer() {
           rel="noopener noreferrer"
           className="transition hover:text-pink-300"
         >
-          <strong>Vexia.cl </strong>
+          <strong>KHiDO.CL </strong>
         </a>
         . Todos los derechos reservados.
       </div>
