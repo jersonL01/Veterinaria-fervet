@@ -93,7 +93,7 @@ function Footer() {
       <div className="border-t border-white/10 py-4 text-center text-sm text-white/60">
         © 2026{" "}
         <a
-          href="https://vexia.cl/"
+          href="https://khido.cl/"
           target="_blank"
           rel="noopener noreferrer"
           className="transition hover:text-pink-300"
